@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   data () {
     return {
@@ -82,7 +82,7 @@ export default {
           return
         }
         // 发送ajax请求
-        axios.post('http://localhost:8888/api/private/v1/login', this.loginForm).then(res => {
+        this.$axios.post('login', this.loginForm).then(res => {
           console.log(res)
           if (res.data.meta.status === 200) {
             // 保存token令牌

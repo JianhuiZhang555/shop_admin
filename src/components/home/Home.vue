@@ -60,11 +60,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-
-    }
-  },
   methods: {
     logout () {
       // 弹出框
